@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="images/madi.png" type="image/png">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Satisfy" rel="stylesheet">
+		<style>
+			section  {
+				width: 100vw;
+				height: 100vh;
+				padding: 50px;
+			}
+			.cl_white{
+				color: #00EAFD;
+				font-family: 'Bungee', cursive;;
+				font-weight: bold;
+			}
+			img {
+				width: 300px;
+				transition: opacity .1s ease-in-out;
+			}
+			img:hover {
+				opacity: .5;
+			}
+			.col-text {
+				color: black ;
+				font-family: verdana;
+				font-size: 15px;
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+			}
+			.img-thumbnail {
+			width: 340px;
+			height: 230px;
+			}
+			.navbar-right {
+				padding-right: 20px;
+			}
+			#about-text {
+			    font-family: 'Satisfy', cursive;
+			    font-size: 160%;
+			}
+			.panel-body{
+			    height: 250px;
+			}
+			ul li{
+			    font-family: 'Bungee', cursive;
+			}
+
+			@media screen and (max-width: 400px) {
+				#nav-menu {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+
+	<body data-spy="scroll" data-target="navbar">
+		<nav class="navbar navbar-inverse navbar-fixed-bottom" id="nav-menu">
+			<ul class="nav navbar-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#work">What I do</a></li>
+				<li><a href="#about">What about me</a></li>
+				<li><a href="#contact">Contact me</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index4.html">Photo Gallery</a></li>
+				<li><a href="index3.html">The Blog</a></li>
+			</ul>
+		</nav>
+		<section id="home" style="background: url(images/imge3.jpg); background-size:100% 100%;" class="cl_white ">
+			<h1 style="font-size: 530%">Welcome to My Profile!</h1>
+			<p style="font-size:130%">&nbsp;</p>
+			<p class="lead" style="font-size:24px">A brief description about me...</p>
+
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Connect<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-top">
+					<li><a href='https://www.facebook.com/nix.prakash'>Facebook</a></li>
+					<li><a href='https://www.twitter.com/imnix07'>Twitter</a></li>
+					<li><a href='https://www.github.com/nix07'>GitHub</a></li>
+				</ul>
+			</div>
+
+		</section >
+		<section id="work" class="container">
+			<div class="page-header">
+				<h1 class="text-center" style="font-family: 'Bungee Inline', cursive;">My Work</h1>
+			</div>
+			<div class="text-center">
+				<img src="images/img.jpg" class="img-thumbnail" alt="My work pics">
+				<img src="images/img3.jpg" class="img-thumbnail" alt="My work pics">
+				<img src="images/imge.jpg" class="img-thumbnail" alt="My work pics">
+				<img src="images/imge2.jpg" class="img-thumbnail" alt="My work pics">
+				<img src="images/img2.jpg" class="img-thumbnail" alt="My work pics">
+				<img src="images/img.jpg" class="img-thumbnail" alt="My work pics">
+			</div>
+		</section>
+		<section class="container" id="about">
+			<h2 class="text-center" style="font-family: 'Bungee Inline', cursive;">About Me</h2>
+			<div class="col-text" id="about-text">I am a self taught computer programmer who loves to code, test, debug and create. I started coding when I was 15 and since then it has become an obsession for me. I have always pushed myself to learn something new and exciting. But I believe learning is just beginning. Rather implementing that skill to solve a problem or improve it, is much more important. I even like to contribute to open source projects by finding bugs, solving them(if possible for me) and translations.Presently I am persuing my Bachelor of Engineering in Electronics and Telecommunication Engineering at R.V College of Engineering, Bangalore. Apart from coding I like to play sports like Table Tennis, Badminton, Cricket and Chess. I like to explore new areas and people from different disciplines. I am even interested in teaching "How To Code" to beginners, specially school students. </div><br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4>Web Designing</h4>
+						</div>
+						<div class="panel-body">
+							<img src="images/web2.jpg" class="img-circle center-block img-md" alt="Web design pic">
+							<br>
+							<p class="lead text-center">I design Web.</p>
+							<br>
+						</div>
+						<div class="panel-hfooter"></div>
+					</div> 
+				</div>
+
+				<div class="col-md-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4>Problem Solving</h4>
+						</div>
+						<div class="panel-body">
+							<img src="images/solve.jpg" class="img-circle center-block img-md" alt="Problem solving pics">
+							<p class="lead text-center">Solving Computational Problems.</p>
+						</div>
+						<div class="panel-hfooter"></div>
+					</div> 
+				</div>
+			</div>
+		</section>
+		<section style="background: silver;" id="contact">
+			<div class="page-header">
+				<h2 class="text-center" style="font-family: 'Bungee Inline', cursive;">Contact Me</h2>
+			</div>
+			<form class="col-md-5 col-md-offset-4">
+				<div class="form-group">
+					<input class="form-control" id="name" placeholder="Insert your name" type="text">
+				</div>
+				<!--<div class="form-group">
+					<input class="form-control" id="email" placeholder="Insert your email" type="email">
+				</div>-->
+				<div class="form-group">
+					<input class="form-control" id="subject" placeholder="Subject" type="text">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" id="message" rows="10">Comments</textarea>
+				</div>
+				<div class="form-group">
+					<input class="btn btn-success btn-block"  id="submit_btn" type="submit">
+				</div>
+			</form>
+			<script type="text/javascript" src="/ui/js/test.js"></script>
+		</section>
+		<script>
+		    console.log('/****Working on the application to make it a responsive web-app*****/');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>The Blog</title>
+		<link rel="icon" href="images/madi.png" type="image/png">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style2.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="https://use.fontawesome.com/a772b32689.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Pacifico" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <style>
+	        .posts h1{
+	            font-family: 'Baloo Bhaina', cursive;
+	        }
+	        ul li{
+	            font-family: 'Baloo Bhaina', cursive;
+	            font-size: 17px;
+	        }
+	        #header-top {
+                	padding-top: 50px;
+                }
+	        @media all and (max-width: 400px) {
+            	#header-top {
+                	padding-top: 100px;
+                }
+                #twitter-id {
+                	padding-left: 65px;
+                }
+                #github-id {
+                	padding-right: 40px;
+                }
+        	}
+	    </style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navi" style="color: white; border-color: white; border-width: 2px; padding: 4px;" aria-expanded= true>
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span style="color: white; font-family: 'Baloo Bhaina', cursive;font-size: 17px;">Menu </span>
+	                    <i class="fa fa-bars"></i>
+	                </button>
+	                <div class="navbar-header">
+						<a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
+					</div>
+	            </div>
+
+	            <div class="collapse navbar-collapse" id="navi"> 
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Home</a></li>
+						<li><a href="index3.html">The Blog</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="index4.html">Gallery</a></li>
+						<li><a href="index5.html">Login/Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header style="background: url(images/header.jpg)">
+			<div class="text-center" id="header-top">
+				<h1 style="font-family:'Bungee', cursive;">The Blog</h1>
+				<div class="lead" style="font-family: 'Pacifico', cursive;">
+					'The Blog' for Dummies...
+				</div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			    <div class="posts">
+					<h1><a href="/articles/article-three">C Programming for Engineering Students</a></h1>
+					<p class="lead">Helping the young coders.</p>
+				</div>
+				<div class="posts">
+					<h1><a href="/articles/article-one">Introduction to Modern Application Development</a></h1>
+					<p class="lead">A great resource to get started with the web.</p>
+				</div>
+				<div class="posts">
+					<h1><a href="/articles/article-two">Summer Internship</a></h1>
+					<p class="lead">Looking forward to get an amazing summer internship.</p>
+				</div>
+				
+				<div class="posts">
+					<h1><a href="/articles/article-four">Introduction to MySQL</a></h1>
+					<p class="lead">DBMS language.</p>
+				</div>
+				<div class="posts">
+					<h1><a href="/articles/article-five">Mobile Technology</a></h1>
+					<p class="lead">Mobile application development.</p>
+				</div>
+				<div class="down-btn text-right">
+					<button class="btn btn-default btn-lg" id="older">Older Posts<span class="glyphicon glyphicon-menu-right"></span></button>
+					<script>
+					    var butt = document.getElementById('older');
+					    butt.onclick = function(){ alert('No older Posts!!!');};
+					</script>
+				</div>
+			</div>
+		</div>
+		<footer class="mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<hr>
+						<ul class="list-inline text-center">
+	                        <li style="font-size:4;">Made with ♥ by <b>Nikhil Prakash</b></li>
+	                        <li id="twitter-id">
+	                            <a href="https://twitter.com/imnix07">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="https://www.facebook.com/nix.prakash">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li id="github-id">
+	                            <a href="https://github.com/nix07">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
